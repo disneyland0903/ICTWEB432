@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StoryType</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="./base.css">
+    <style>
+    .headWrapper {
+        padding: 0 20px 0 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .home {
+        font-size: 20px;
+    }
+
+    .search {
+       margin-right: -450px;
+    }
+
+    #type option{
+        font-size: 20px;
+    }
+    #type {
+       
+        height: 30px;
+        width: 200px;
+    }
+    .wrapper {
+        margin: 10px auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 3fr 1fr 2fr;
+        gap: 1%;
+        width: 1240px;
+        height: 650px;
+    }
+
+    .item-a {
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        overflow: hidden;
+    }
+
+    .item-a img {
+        width: 100%;
+        object-position: 0 -145px;
+    }
+
+    .item-b {
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        font-size: 30px;
+        text-align: center;
+        padding-top: 40px;
+    }
+
+    .item-c {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        padding-top: 40px;
+        text-align: center;
+        border: 1px solid #000;
+        border-radius: 5px;
+        font-size: 25px;
+    }
+
+    .item-c img {
+        width: 100px;
+        object-position: 0 15px;
+    }
+
+    .item-d {
+        grid-column-start: 3;
+        grid-column-end: 5;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        padding-top: 30px;
+        text-align: center;
+        border: 1px solid #000;
+        border-radius: 5px;
+        font-size: 25px;
+    }
+
+    .item-d img {
+        width: 100px;
+        object-position: 0 15px;
+    }
+
+            
+    </style>
+</head>
+<body>
+    <div class="headWrapper">
+        <div class="logo">
+            <span class="material-symbols-outlined">home</span>
+            <div class="home"><a href="./AppWebsite.html">BoutiqueQLDHomes</a></div>
+        </div>
+        <label for="search" class="search">Search by
+            <select name="search" id="search">
+                <option value="">--Please choose an option--</option>
+                <option value="./bedroomQuantity.html">Bedroom Quantity</option>
+                <option value="./storyType.html" >Story Type</option>
+                <option value="./landSize.html">Land size Requirement</option>
+            </select>
+        </label>
+        
+        <div class="contact">
+        <span class="material-symbols-outlined">deskphone</span>
+        <button class="touch">Get in touch</button>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="item-a"><img src="./image/house.jpg" alt=""  ></div>
+        <div class="item-b">I want to build...</div>
+        <div class="item-c">
+            <div>single</div>
+            <a href="./designNotes.html"><img src="./image/single.png" alt="" title="single"></a>
+            
+        </div>
+        <div class="item-d">
+            <div>double</div>
+            <a href="./landDescription.html"><img src="./image/double.png" alt="" title="double"></a>
+        </div>
+        
+        
+    </div>
+    <div class="footer">
+        <dl>
+            <dt class="contact">Contact us</dt>
+            <dd><span class="material-symbols-outlined">call</span></dd>
+            <dd><a href="#">03 9674 1234</a></dd>
+            <dd>
+                <a href="#">123 Lorimer Street Docklands,Victoria 3008</a>
+            </dd>
+        </dl>
+        <div>
+            <div class="social1">Social </div>
+            <div class="social2"> 
+                <div><a href="#" class="fb"><img src="./image/facebook.png" alt="" width="30"></a></div>
+                <div><a href="#" class="insta"><img src="./image/instagram.png" alt="" width="30"></a></div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>© Copyright 2023 Our Best Friends Retail Pty Ltd - ACN 150 789 123</p>
+        <p class="terms"><a href="#">Terms and Conditions</a></p>
+        <p class="privacy"><a href="#">Privacy Policy</a></p>
+    </div>
+    <script src="./dropdown.js"> </script>
+    
+</body>
+</html>
